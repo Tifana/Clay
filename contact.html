@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CLAY</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Image/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- ----------contact us content---------- -->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.1192662280737!2d13.435806516006995!3d52.51318064448663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e4120b76b3f%3A0xf19e27938a576d95!2sFranz-Mehring-Platz%202%2C%2010243%20Berlin!5e0!3m2!1sen!2sde!4v1656499502407!5m2!1sen!2sde"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Franz-Mehring-Platz 2 3/4</h5>
+              <p>Berlin, Germany</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+49 333666999</h5>
+              <p>Monday to Friday, 10AM to 3PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>mytestmail142@gmail.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form
+            action="https://formsubmit.co/mytestmail142@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn purple-btn" id="btn-email">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------Footer---------- -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores
+        ipsam, omnis sequi fugit perspiciatis. Soluta, hic accusantium maiores
+        <br />molestias molestiae aut nulla facilis rerum? Dolorum voluptatibus
+        explicabo molestiae aut.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Tifana Rosa</p>
+    </section>
+
+    <!---------Javascript for Toggle Menu-------->
+    <script>
+      const navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
